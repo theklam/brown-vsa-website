@@ -1,0 +1,111 @@
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="filehelper.js"></script> 
+<script type="text/javascript" src="ilightbox/src/js/jquery.requestAnimationFrame.js"></script>
+<script type="text/javascript" src="ilightbox/src/js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="ilightbox/src/js/ilightbox.packed.js"></script>
+ 
+<link rel="stylesheet" type="text/css" href="ilightbox/src/css/ilightbox.css"/>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<div id="indent">
+
+<h2>Social Media</h2>
+<p>Connect with us on social media for more updates and event information! Follow us on Twitter and Instagram (@brownvsa), like our Facebook page (<a href="facebook.com/brownvsa">facebook.com/brownvsa</a>), and join our Facebook group (<a href="facebook.com/groups/BrownVSA/">facebook.com/groups/BrownVSA</a>).
+</p>
+
+Click on any of the links below to open up their galleries!
+
+<h1>2014 - 2015</h1>
+<a target="_blank" href="https://www.facebook.com/media/set/?set=a.751229798257528.1073741829.259752520738594&type=3">Family Week Fall 2014</a>
+<br>
+<a target="_blank" href="https://www.facebook.com/media/set/?set=a.770277199686121.1073741831.259752520738594&type=3">Banh Mi Meal</a>
+<br>
+<a target="_blank" href="https://www.facebook.com/media/set/?set=a.774469279266913.1073741832.259752520738594&type=3">VSA Holiday Party</a>
+<br>
+<a target="_blank" href="https://www.facebook.com/media/set/?set=a.810102555703585.1073741835.259752520738594&type=3">Tet Festival: Year of the Goat</a>
+<br>
+
+<h1>2013 - 2014</h1>
+<div id="photo-gallery">
+</div>
+<script>
+
+	function makePhotoGallery(name, directory, number) {
+	    if(typeof(number)==='undefined') number = 100;
+		var indent = document.getElementById("photo-gallery");
+		var d = document.createElement("div");
+		d.id = directory + '-photo-gallery';
+		var title = name;
+		var length = 0;
+		
+		var filelist = FileHelper.readStringFromFileAtPath('images/photos/' + directory + '/filelist.txt');
+		var files = filelist.split('<br/>');
+		console.log(files);
+		
+		var i = files.indexOf("filelist.txt");
+		if (i != -1) {
+			files.splice(i, 1);
+		}
+		
+		i = files.indexOf("filelist.txt\r");
+		if (i != -1) {
+			files.splice(i, 1);
+		}
+		var filelength = files.length;
+		var gallery = '';
+		for(var i = 0; i < Math.min(number, filelength); i++) {
+			files[i] = files[i].replace('\r','');
+			if(files[i] === "filelist.txt" || files[i].length == 0) {
+				number++;
+				continue;
+			}
+			console.log(files[i]);
+			
+			var insert = "'images/photos/" + directory + "/" + files[i] + "'";
+			//gallery = gallery + '<li><img src=' + insert + '</li>';
+
+
+			if(i == 0) {				
+				gallery = gallery + 
+					'<a href=' + insert + 
+					'class="ilightbox-photo-' + directory + '" ' + 
+					'> ' + 
+					title + '</a>';	
+				gallery = gallery + '<div style="display: none;">';
+			} else {
+				gallery = gallery + 
+					'<a href=' + insert + 
+					'class="ilightbox-photo-' + directory + '" ' + 
+					'> ' + '</a>';				
+			}
+		}
+		
+		gallery = gallery + '</div>';
+		d.innerHTML = gallery + '</ul>';
+		indent.appendChild(d);
+		
+	}
+	makePhotoGallery("Xôi-cial", "xoicial");
+	makePhotoGallery("ADOCH", "adoch");
+	makePhotoGallery("Asian Arts Fest", "aaf");
+	makePhotoGallery("VSA Meet and Greet", "meet-and-greet");
+</script>
+<script>
+	$(document).ready(function(){
+	  $('.ilightbox-photo-xoicial').iLightBox({controls: { thumbnail: false}});
+	  $('.ilightbox-photo-adoch').iLightBox({controls: { thumbnail: false}});
+	  $('.ilightbox-photo-aaf').iLightBox({controls: { thumbnail: false}});
+	  $('.ilightbox-photo-meet-and-greet').iLightBox({controls: { thumbnail: false}});
+	  console.log("what");
+	});
+</script>
+
+<!-- This widget broke somehow :(        WEBSTA WIDGETS - widgets.websta.me
+
+<h1>Instagram</h1>
+<div id="instagram">
+	<iframe src="//widgets-code.websta.me/w/01c22ab43650?ck=MjAxNi0wNy0xOFQwNDoyNjoxMC4wMDBa" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:auto;height:520px;width:335px;"></iframe>
+</div>
+
+-->
+
+</div>

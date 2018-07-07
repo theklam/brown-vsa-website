@@ -1,0 +1,7 @@
+filelist.txt
+Jeannie Le.jpg
+Mary Nguyen.jpg
+Michelle Hoang.jpg
+Nancy Truong.jpg
+Tung Nguyen.jpg
+Vi Mai.jpg

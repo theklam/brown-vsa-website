@@ -1,0 +1,52 @@
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="filehelper.js"></script> 
+<script type="text/javascript" src="ilightbox/src/js/jquery.requestAnimationFrame.js"></script>
+<script type="text/javascript" src="ilightbox/src/js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="ilightbox/src/js/ilightbox.packed.js"></script>
+ 
+<link rel="stylesheet" type="text/css" href="ilightbox/src/css/ilightbox.css"/>
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<div id="indent">
+	<div id="eboard-page">
+	<h2>E-Board</h2>
+
+	<script>
+		function makeEntry(name, position) {
+			var indent = document.getElementById("eboard-page");
+			var d = document.createElement("div");
+			d.id = 'eboard-entry';
+			d.innerHTML = '<h1> '+name+' - '+position+ ' </h1>';
+			d.innerHTML = d.innerHTML + '<a target="_blank" href="eboard/' + name + '.jpg" class="ilightbox-eboard"><img src="eboard/' + name + '.jpg" style="height:90x; width:90px; border-radius:50%; float: left; margin-right: 10px"></a>';
+			var description = FileHelper.readStringFromFileAtPath('eboard/' + name + '.txt');
+			d.innerHTML = d.innerHTML + '<p>' + description +'</p><br/>';
+			indent.appendChild(d);
+		};
+
+		function pageEndLineBreaks() {
+			var indent = document.getElementById("eboard-page");
+			var d = document.createElement("div");
+			d.id = 'endingLineBreaks';
+			d.innerHTML = '<br><br><br>';
+			indent.appendChild(d);
+		}
+		
+		makeEntry("Brandon Lê", "Executive Co-Chair");
+		makeEntry("Arthur Tran", "Executive Co-Chair");
+		makeEntry("Zak Nguyen", "External Affairs Chair");
+		makeEntry("Kim Pham", "Finance Chair");
+		makeEntry("Tori Tran", "Publicity Chair");
+		makeEntry("Mary Nguyen", "Senior Advisor");
+		makeEntry("Alyssa Pho", "First-Year Representative");
+		makeEntry("Kalvin Lam", "First-Year Representative");
+		pageEndLineBreaks();
+	</script>
+	
+	<!--
+	<script>
+		$('.ilightbox-eboard').iLightBox();
+	</script>
+	-->
+
+	</div>
+</div>
