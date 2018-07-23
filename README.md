@@ -1,6 +1,9 @@
 # Pre-steps
 Be sure to request a web publishing account from IT services.
 
+# Off Campus Access
+You must use the VPN! "Are you currently on or off campus? If off campus, you'll need to establish a VPN (https://it.brown.edu/services/type/virtual-private-network-vpn) connection in order to connect to the students server." -From the Brown Web Services Person
+
 # FTP / Cyberduck
 Be sure you are using SFTP, and try the PORT 22.
 
