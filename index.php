@@ -26,7 +26,7 @@
 
 								<!-- Box -->
 									<section class="box feature">
-										<a href="eboard.php" class="image featured"><img src="images/pic01.jpg" alt="Meet the executive board" /></a>
+										<a href="eboard.php" class="image featured"><img src="images/eboard-group/100kb.jpg" alt="Meet the executive board" /></a>
 										<div class="inner">
 											<header>
 												<h2>Meet the executive board</h2>
@@ -56,7 +56,7 @@
 
 								<!-- Box -->
 									<section class="box feature">
-										<a href="listserv.php" class="image featured"><img src="images/pic03.jpg" alt="Join our listserv" /></a>
+										<a href="listserv.php" class="image featured"><img src="images/dance-troupe/100kb.jpg" alt="Join our listserv" /></a>
 										<div class="inner">
 											<header>
 												<h2>Join our listserv</h2>

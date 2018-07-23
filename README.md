@@ -63,5 +63,8 @@ Brown WebServices
 # Off Campus Access
 Are you currently on or off campus? If off campus, you'll need to establish a VPN (https://it.brown.edu/services/type/virtual-private-network-vpn) connection in order to connect to the students server.
 
+# Helpful Tools
+1) Image compressor: https://www.imgonline.com.ua/eng/compress-image-size.php
+
 # SSH
 In order to connect via ssh, use the following command: `ssh klam4@STUDENTS.BROWN.EDU`
