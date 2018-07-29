@@ -27,9 +27,9 @@
 									<!-- Sidebar -->
 
 										<section>
-										<img src="https://scontent.xx.fbcdn.net/v/t1.0-9/13138735_1014040005309838_6829416565030456575_n.jpg?oh=7bf797dac5489746c40abd51991b8ea7&oe=59A801F8" width="300" height="200"> <br>
-										<img src="https://scontent.xx.fbcdn.net/v/t1.0-9/15134760_1168925733154597_1951455255704042960_n.jpg?oh=157d906b896872384a13466a78e26736&oe=599CDF3D" width="300" height="200"> <br>
-										<img src="https://scontent.xx.fbcdn.net/v/t1.0-9/14370027_1101701486543689_4010113596210133075_n.jpg?oh=f75802cf5c331648d726fbf7e1298b38&oe=59AE1DD7" width="300" height="200"> 
+										<img src="images/ace-program/andy-jenny-wholesome-100kb.jpg" width="300" height="200"> <br>
+										<img src="images/ace-program/group-2.0-100kb.jpg" width="300" height="200"> <br>
+										<img src="images/ace-program/group-gang-gang-100kb.jpg" width="300" height="200"> <br>
 										</section>
 
 
