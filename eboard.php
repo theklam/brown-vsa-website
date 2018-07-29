@@ -78,7 +78,7 @@
 									<tr>
 									<td width="50%" style="padding-right:20px; padding-bottom:20px;">
 									<img src="images/eboard/18-19/compressjpeg/kim-min.jpg" height="160" width="160" style="float:left; padding-right:20px; padding-bottom:15px">
-									<h3>Kim Pham '20</h3>
+									<h3>Kim Pham '18</h3>
 									<h4>Senior Advisor</h4>
 									<p>Hey there! My name is Kim and I am a senior from Boston studying Materials Chemistry. You can spot me doing research at Geochem 90% of the time, with the other 10% being at a VSA event :). Time permitting, I knit/crochet/embroider, hike (if an occasion were to come up), cook, and go to ballroom socials! I will be serving as Senior advisor this year, and have previously been President, Vice President, and Freshrep. I love grabbing boba and food with people so I’m super excited to make trips with old and new friends this year!</p>
 									</td>
