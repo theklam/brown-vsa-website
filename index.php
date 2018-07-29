@@ -26,7 +26,7 @@
 
 								<!-- Box -->
 									<section class="box feature">
-										<a href="eboard.php" class="image featured"><img src="images/eboard-group/100kb.jpg" alt="Meet the executive board" /></a>
+										<a href="eboard.php" class="image featured"><img src="images/eboard-group/200kb.jpg" alt="Meet the executive board" /></a>
 										<div class="inner">
 											<header>
 												<h2>Meet the executive board</h2>
